@@ -1,0 +1,64 @@
+.hover-box {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    transition: transform 500ms ease-in;
+}
+
+.hover-box:hover {
+    transform: translateX(150px) scale(0.8) rotate(45deg);
+}
+
+.spin-box {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.move-box {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+        background-color: blue;
+    }
+    25% {
+        transform: translate(0px, 200px);
+        background-color: purple;
+    }
+    50% {
+        transform: translate(200px, 200px);
+        background-color: green;
+    }
+    75% {
+        transform: translate(200px, 0px);
+        background-color: red;
+    }
+
+}
