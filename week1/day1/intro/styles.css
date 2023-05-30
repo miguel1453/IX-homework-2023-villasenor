@@ -1,0 +1,49 @@
+h1 {
+    color: red;
+}
+
+.container  {
+    background-color: darkgray;
+    display: flex;
+
+    padding: 10px;
+    flex-wrap: wrap;
+    
+
+}
+.box {
+    height: 200px;
+    width: calc(33.333% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+    margin: 10px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+#big-box {
+    width: calc(66.666% - 20px);
+}

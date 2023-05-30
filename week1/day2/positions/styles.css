@@ -1,0 +1,35 @@
+.box {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-2 {
+    padding: 25px;
+    background-color: red;
+    max-width: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 47%;
+}
+
+.fixed {
+    position: fixed;
+    top: 30px;
+    left: 90%;
+}
+
+.relative {
+    position: relative;
+    top: 50px;
+}

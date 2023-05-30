@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navLinks">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/miguelvillasenor/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/miguel1453" target="_blank">Github</a></li>
+                <li><a href="https://instagram.com/miguelvillasenor5?igshid=NTc4MTIwNjQ2YQ==" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <div class="headline">
+        <div class="title">
+            <img src="https://res2.weblium.site/res/5e06193d298a3f002209fbce/5e1c6dbe6aba340022ff6b2a_optimized_700_e1290x112-287x21.webp" alt="">
+            <h1> Hello! I'm <span class="textEmphasis">Miguel</span> Villaseñor</h1>
+
+        </div>
+        <div class="headlineImageContainer">
+            <img src="headshot.png" alt="Miguel Villasenor's headshot">
+        </div>
+        
+    </div>  
+    <hr>
+    <section>
+        <div class="infoBoxContainer">
+            <div class="infoBox">
+                    <h2>A little about myself</h2>
+                    <p>I'm a junior at UNC Chapel Hill studying Computer Science with a minor in Business and Professional Spanish.
+                        Throughout much of my life I worked in one of my family's businesses, <a href="https://www.instagram.com/losportaleswilmington/?hl=en" target="_blank">Los Portales Supermaket,</a> 
+                        where I not only worked as a cashier, but as a money transfer agent, a check cashing representative, and as the go-to 
+                        guy for any tech problems. Due to this experience I have a passion for business and tech, and that's why I chose
+                        the software engineering program!
+
+                    </p>
+                    <img src="losportales.jpg" alt="Los Portales Sign" class="infoBoxImage">
+                    
+            </div>
+           
+            <div class="infoBox">
+                <h2>Fun Facts</h2>
+                <p> I'm a part of <a href="https://www.instagram.com/appteamcarolina/?hl=en" target="
+                    ">AppTeam Carolina</a>, a club at my university where we learn to build iOS apps
+
+                </p>
+                <p>I also just recently went on a program with the Kenan-Flagler Business school to Cape Town, South Africa, where 
+                    I was able to work with local students to consult local social entrepreneurs on expanding their businesses.
+                </p>
+                <img src="appteam.png" alt="Miguel Villasenor presenting an app for AppTeamCarolina gala" id="appteam">
+
+                <img src="capetown.JPG" alt="Miguel Villasenor at capetown, Table Mountain behind him" id="capetown">
+            </div>
+            <div class="infoBox" id="quizBox">
+                <h2>2 Truths 1 Lie!</h2>
+                <p>Below are two truths and one lie about me, click on the one you think is a lie and it will light up red if you're incorrect and green if you chose the lie!</p>
+                <ul id="quiz">
+                    <li onclick="submit(1)" class="answer" id="answer1">I recently had a bad injury where I lost some of my teeth by racing in the dark, and I lost the race</li>
+                    <li onclick="submit(2)" class="answer" id="answer2">I am the first person in my family to attend a university</li>
+                    <li onclick="submit(3)" class="answer" id="answer3">I've never had surgery nor broken a bone</li>
+                </ul>
+            </div>
+            <div class="infoBox">
+                <div id="requirements">
+                    <form action="POST">
+                        <label for="radio">Text</label>
+                        <input type="text" id="text" placeholder="Text box!">
+                        
+                        <label for="radio"> Radio button!</label>
+                        <input type="radio" name="radio">
+                        <input type="radio" name="radio">
+                        <label for="checkbox">checkbox!</label>
+                        <input type="checkbox">
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    
+</body>
+</html>
