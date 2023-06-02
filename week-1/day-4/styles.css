@@ -1,0 +1,9 @@
+.custom-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 100px;
+    padding: 25px;
+
+}
