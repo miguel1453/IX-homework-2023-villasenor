@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-dark"> 
-    <div class="container p-5">
+    <div class="container p-5 my-container">
         <div class="card text-center" id="card">
             <h1 class="py-3">Badly explained movies</h1>
 
@@ -24,8 +25,8 @@
         
             <!-- <form onsubmit="checkGuess(event)"> -->
 
-                <div class="d-grid gap-2 px-4 pb-4">
-                    <input type="text" class="form-control" placeholder="Enter guess here" id="guess">
+                <div class="d-grid gap-2 px-4 py-2">
+                    <input type="text" class="form-control border" placeholder="Enter guess here" id="guess">
                     <button class="btn btn-primary" onclick="checkGuess()" type="submit">Submit</button>
                     <hr>
                     <button class="btn btn-secondary" onclick="showHint()">Show Hint</button>
@@ -33,8 +34,12 @@
                 </div>
             <!-- </form> -->
 
-            <div id="hint"></div>
-            <div id="result"></div>
+            <div class="d-grid gap-2 px-4 pb-4 py-2">
+
+                <div id="hint"></div>
+                <div id="result"></div>
+
+            </div>
 
         </div>
 
