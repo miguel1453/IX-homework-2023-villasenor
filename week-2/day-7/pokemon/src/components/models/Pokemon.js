@@ -2,6 +2,9 @@ export class Pokemon {
     constructor(name, url) {
         this.name = name;
         this.url = url;
+        this.image = () => {
+            return this.fetchSprite();
+        }
     }
 
     async fetchSprite() {
