@@ -7,10 +7,12 @@ import TaskInput from './components/TaskInput';
 import TaskTable from './components/TaskTable';
 import { useState, useEffect } from 'react';
 import TaskService from './services/task-service'
+import { SpinningCircles, Bars } from 'react-loading-icons';
 
 function App() {
 
   const [tasks, setTasks] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect( () => {
     if (!tasks.length) {
@@ -19,9 +21,11 @@ function App() {
   }, []);
 
   async function onInitialLoad() {
+    setLoading(true);
     const tasks = await TaskService.fetchTasks();
     console.log(tasks);
     setTasks(tasks);
+    setLoading(false);
   }
 
 
@@ -42,17 +46,18 @@ function App() {
 
   return (
     <div className="container mt-5">
+
       <div className='card card-body text-center'>
         <h1>Task List</h1>
 
         <hr></hr>
 
         <p>Our firebase task list!</p>
-
         <TaskInput onTaskCreate={onTaskCreate}></TaskInput>
         <TaskTable onTaskCompleteToggle={onTaskCompleteToggle}
           tasks={tasks}
-          onTaskRemove={onTaskRemove}>
+          onTaskRemove={onTaskRemove}
+          loading={loading}>
 
         </TaskTable>
       </div>

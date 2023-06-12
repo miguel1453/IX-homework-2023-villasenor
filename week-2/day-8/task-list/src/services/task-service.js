@@ -29,7 +29,7 @@ class TaskService {
         const docRef =  await addDoc(collectionRef, {
             name: task.name,
             completed: task.completed,
-        })
+        });
 
         task.id = docRef.id;
         return task;

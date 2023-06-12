@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function TaskTable(props) {
+
     return (
         <div>
+            {props.loading? (
+                <div className="spinner-border" role="status"></div>
+            ) : (
+            <>
             <table className='table'>
                 <thead>
                     <tr>
@@ -37,6 +42,9 @@ export default function TaskTable(props) {
                     }
                 </tbody>
             </table>
+            </>
+
+            )}
         </div>
     )
 }
